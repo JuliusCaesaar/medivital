@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Cadastramento de Pacientes</title>
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+        }
+        
+        .cadastro-pacientes {
+            background-color: #135252;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        .cadastro-pacientes h1 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha se não houver espaço suficiente */
+        }
+
+        .campo-de-dados {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .campo-de-dados div {
+            width: 30%;
+        }
+
+        .campo-de-dados p {
+            text-align: left;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .btn-cad-pacientes button {
+            cursor: pointer;
+            background-color: #1c9494;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-cad-pacientes button:hover {
+            background-color: #135252;
+        }
+
+        /* Novo estilo para o menu */
+        nav {
+            background-color: #135252;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/Logo.jpg" alt="">
+        </div>
+
+        <!-- Novo menu -->
+        <nav class="desktop">
+            <ul>
+                <li><a href="./paginainicial.html">Boas vindas</a></li>
+                <li><a href="./home.html">Página Inicial</a></li>
+                <li><a href="./mercadorias.html">Estoque</a></li>
+                <li><a href="./funcionarios.html">Médicos</a></li>
+                <li><a href="./relatorio.html">Relatórios</a></li>
+                <li><a href="">Vendas por item</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav><!--.desktop-->
+
+        <button onclick="animarMenu()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+        <!-- Novo menu móvel -->
+        <nav class="mobile" id="menu-mobile">
+            <ul>
+                <li><a href="./paginainicial.html">Boas vindas</a></li>
+                <li><a href="./home.html">Página Inicial</a></li>
+                <li><a href="./mercadorias.html">Estoque</a></li>
+                <li><a href="./funcionarios.html">Médicos</a></li>
+                <li><a href="./relatorio.html">Relatórios</a></li>
+                <li><a href="">Vendas por item</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav><!--.mobile-->
+    </header>
+
+    <div class="cadastro-pacientes"><h1>Cadastramento de Pacientes</h1></div>
+
+    <div class="container">
+        <form id="cadastroForm" method="POST">
+            <div class="campo-de-dados">
+                <div>
+                    <p>Nome completo:</p>
+                    <input type="text" name="nome" placeholder="Digite o nome do paciente aqui"><br>
+
+                    <p>Nascimento:</p>
+                    <input type="date" name="nascimento"><br>
+
+                    <p>CPF:</p>
+                    <input type="text" name="cpf" placeholder="Digite o CPF aqui">
+                </div>
+
+                <div>
+                    <p>Sexo:</p>
+                    <select name="sexo">
+                        <option selected disable value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select><br>
+
+                    <p>Tipo sanguíneo</p>
+                    <select name="tipo_sanguineo">
+                        <option selected disable value="">Selecione</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select><br>
+                </div>
+
+                <div>
+                    <p>Telefone:</p>
+                    <input type="tel" name="telefone" placeholder="Digite o telefone aqui"><br>
+
+                    <p>Celular:</p>
+                    <input type="tel" name="celular" placeholder="Digite o telefone celular aqui"><br>
+
+                    <p>E-mail:</p>
+                    <input type="email" name="email" placeholder="Digite o e-mail aqui"><br>
+                </div>
+
+                <div>
+                    <p>Nome da mãe:</p>
+                    <input type="text" name="nome_mae" placeholder="Digite o nome da mãe aqui"><br>
+
+                    <p>Nome do pai:</p>
+                    <input type="text" name="nome_pai" placeholder="Digite o nome do pai aqui"><br>
+
+                    <p>Endereço:</p>
+                    <input type="text" name="endereco" placeholder="Digite o endereço aqui"><br>
+
+                    <p>Número:</p>
+                    <input type="number" name="numero" placeholder="Digite o número"><br>
+
+                    <p>Bairro:</p>
+                    <input type="text" name="bairro" placeholder="Digite o nome do bairro aqui"><br>
+
+                    <p>CEP:</p>
+                    <input type="text" name="cep" placeholder="Digite o CEP aqui"><br>
+                </div>
+
+                <div>
+                    <p>Leito:</p>
+                    <select name="leito">
+                        <option selected disable value="">Selecione</option>
+                        <option value="Leito 1">Leito 1</option>
+                        <option value="Leito 2">Leito 2</option>
+                        <option value="Leito 3">Leito 3</option>
+                        <option value="Leito 4">Leito 4</option>
+                        <option value="Leito 5">Leito 5</option>
+                        <option value="Leito 6">Leito 6</option>
+                        <option value="Leito 7">Leito 7</option>
+                        <option value="Leito 8">Leito 8</option>
+                        <option value="Leito 9">Leito 9</option>
+                        <option value="Leito 10">Leito 10</option>
+                        <option value="Leito 11">Leito 11</option>
+                        <option value="Leito 12">Leito 12</option>
+                        <option value="Leito 13">Leito 13</option>
+                        <option value="Leito 14">Leito 14</option>
+                        <option value="Leito 15">Leito 15</option>
+                        <option value="Leito 16">Leito 16</option>
+                        <option value="Leito 17">Leito 17</option>
+                        <option value="Leito 18">Leito 18</option>
+                        <option value="Leito 19">Leito 19</option>
+                        <option value="Leito 20">Leito 20</option>
+                        <!-- Adicione mais opções conforme necessário -->
+                    </select><br>
+                </div>
+
+                <div class="btn-cad-pacientes">
+                    <button type="submit">Cadastrar</button>
+                </div>                
+            </div><!--.campo-de-dados-->
+        </form>
+    </div><!--.container-->
+
+    <script>
+    document.getElementById('cadastroForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = {
+        nome: document.querySelector('input[name="nome"]').value,
+        nascimento: document.querySelector('input[name="nascimento"]').value,
+        cpf: document.querySelector('input[name="cpf"]').value,
+        sexo: document.querySelector('select[name="sexo"]').value,
+        tipo_sanguineo: document.querySelector('select[name="tipo_sanguineo"]').value,
+        telefone: document.querySelector('input[name="telefone"]').value,
+        celular: document.querySelector('input[name="celular"]').value,
+        email: document.querySelector('input[name="email"]').value,
+        nome_mae: document.querySelector('input[name="nome_mae"]').value,
+        nome_pai: document.querySelector('input[name="nome_pai"]').value,
+        endereco: document.querySelector('input[name="endereco"]').value,
+        numero: document.querySelector('input[name="numero"]').value,
+        bairro: document.querySelector('input[name="bairro"]').value,
+        cep: document.querySelector('input[name="cep"]').value,
+        leito: document.querySelector('select[name="leito"]').value,
+    };
+
+    fetch('http://localhost:3001/cadastrar-paciente', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        // Remova o redirecionamento para a página de sucesso
+        // window.location.href = './pagina-de-sucesso.html';
+        // Em vez disso, você pode redirecionar para a página de leitos diretamente
+        window.location.href = './leitos.html';
+    })
+    .catch(error => {
+        console.error('Erro durante o envio do formulário:', error);
+    });
+});
+
+    </script>
+
+    <script src="animar.js"></script>
+</body>
+</html>

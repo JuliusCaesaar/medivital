@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/estilos_pagina_inicial.css.css" />
+    <!--Link google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&    display=swap" rel="stylesheet">
+    <title>Medivital - Bem Vindo!</title>
+
+    <!--Estilização da scroolbar-->
+    <style>
+    ::-webkit-scrollbar {   
+    width: 10px;
+    }
+
+    ::-webkit-scrollbar-track { 
+    background-color: #ccc;
+    border-radius: 30px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #6bc1f1;
+        border-radius: 30px;
+    }
+    </style>
+    <!--Fim da estilização da scroolbar-->
+
+</head>
+    <body>
+        <header class="min-vh-100">
+            <nav class="navbar navbar-expand-lg fixed-top bg-white bg-opacity-75">
+                <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/Medical.png" alt="Medical logo" />
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                      </li>
+                    </ul>
+                    <button class="btn btn-info bg-mavi text-white rounded-0 text-uppercase" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">Acessar</button>
+
+                  </div>
+                </div>
+            </nav>
+
+            <div class="container vh-100 d-flex align-items-center justify-content-center">
+                <div class="row w-100">
+                    <div class="card col-lg-6 bg-transparent border-0 text-white" >
+                        <div class="card-body">
+                            <img src="assets/img/headerbg.jpg" alt="Header" width="1200" height="800">
+                            <h1 class="card-title display-3">Bem vindo ao <b>Medivital!</b></h1>
+                            <h5 class="card-subtitle mb-2">in the world of modern medicine!</h5>
+                            <p class="card-text my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, id! Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn btn-info bg-light text-dark border-0 rounded-0 text-uppercase" type="submit"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        <main>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 ">
+                            <div class="card bg-transparent border-0" >
+                                <div class="card-body">
+                                    <h6 class="card-title text-mavi text-uppercase">Bem vindo ao Medivital! - O seu novo app de saúde!</h6>
+                                    <h2 class="card-subtitle mb-2">Por que você deve usar nosso aplicativo?</h2>
+                                    <p class="card-text my-4">Nosso aplicativo é o melhor aplicativo de gestão hospitalar do Brasil e nós atendemos mais de 50 hospitais, facilitando a vida não só dos nossos colaboradores, mas também dos pacientes, garantindo conforto e comodidade para todos e mais eficiencia no ambiente hospitar.</p>
+                                    <button class="btn btn-info bg-mavi text-white border-0 rounded-0 text-uppercase" type="submit">Acessar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <img src="assets/img/hekimbaba.jpg" class="mw-100" alt="Hekim baba" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-mavi">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 vh-50 d-flex align-items-center order-md-1">
+                            <div class="card bg-transparent border-0 text-white text-center mx-md-5 px-md-5" >
+                                <div class="card-body">
+                                    <h6 class="card-title text-uppercase">Novidades!</h6>
+                                    <h2 class="card-subtitle mb-2">Gestão de estoque</h2>
+                                    <p class="card-text my-4">O Medivital faz controle de estoque em tempo real, dizendo quais medicamentos estão disponíveis em estoque e em que quantidade, garantindo assim que tanto os pacientes quanto os médicos saibam exatamente se há um medicamento disponível ou não.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 vh-50 features" style="background: url('img/features1.jpg') center/cover;"></div>
+                        <div class="col-md-6 vh-50 d-flex align-items-center order-md-1">
+                            <div class="card bg-transparent border-0 text-white text-center mx-md-5 px-md-5 " >
+                                <div class="card-body">
+                                    <h6 class="card-title text-uppercase">Novidades!</h6>
+                                    <h2 class="card-subtitle mb-2">Controle de pessoal.</h2>
+                                    <p class="card-text my-4">No Medivital, os pacientes sabem se o seu médico de preferência está disponível ou não no momento em tempo real.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 vh-50 order-md-1 features" style="background: url('img/features2.jpg') center/cover"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-5">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-4 justify-content-center flex-column">
+                            <div class="card my-5 border-0 align-items-center">
+                                <img src="assets/img/ic1.jpg" class="card-img-top serviceimgs" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Medicamentos.</h5>
+                                    <p class="card-text">Controle de estoque na palma de sua mão.</p>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 align-items-center">
+                                <img src="assets/img/ic2.jpg" class="card-img-top serviceimgs" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Corpo médico.</h5>
+                                    <p class="card-text">Saiba se seu médico favorito está disponível.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 ">
+                            <div class="card my-5 border-0 align-items-center">
+                                <img src="assets/img/ic3.jpg" class="card-img-top serviceimgs" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ">Exames.</h5>
+                                    <p class="card-text">Veja o resultado dos seus exames assim que eles sairem.</p>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 align-items-center">
+                                <img src="assets/img/ic4.jpg" class="card-img-top serviceimgs" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Teleconsulta</h5>
+                                    <p class="card-text">Não quer sair de casa? Seja atendido por teleconferência.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card my-5 border-0 align-items-center">
+                                <img src="assets/img/ic5.jpg" class="card-img-top serviceimgs" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Leitos.</h5>
+                                    <p class="card-text">O Medivital faz também o controle de insumos, o que inclui leitos, saiba exatamente quantos leitos livres o hospital tem disponível no momento.</p>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 align-items-center" >
+                                <img src="assets/img/ic6.jpg" class="card-img-top serviceimgs" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Fale conosco.</h5>
+                                    <p class="card-text">Este é o seu canal direto de comunicação conosco. Se você tiver alguma dúvida, comentário, sugestão ou problema que gostaria de compartilhar, não hesite e fale conosco.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                
+            <div class="bg-boz py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/portfolio-6.jpg" class="card-img my-5" alt="...">
+                            <img src="assets/img/portfolio-2.jpg" class="card-img " alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/portfolio-3.jpg" class="card-img my-5" alt="...">
+                            <img src="assets/img/portfolio-4.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/portfolio-5.jpg" class="card-img my-5" alt="...">
+                            <img src="assets/img/portfolio-1.jpg" class="card-img mb-5" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-mavi py-5">
+                <div class="container">
+                    <div class="col d-flex flex-column">
+                        <div class="d-flex justify-content-center mb-5">
+                            <div class="card-body text-center text-white w-50 d-flex flex-column">
+                                <h1 class="card-title">''</h1>
+                                <p class="card-text">Nossos talentosos desenvolvedores são os arquitetos por trás deste incrível aplicativo. Eles são a mente criativa que transformou ideias em realidade. Responsáveis por codificar, projetar e otimizar cada aspecto deste aplicativo, nossos desenvolvedores se dedicaram incansavelmente para garantir uma experiência impecável para você, nosso valioso usuário. Se você tiver algum feedback, sugestão ou pergunta técnica sobre o funcionamento do aplicativo, sinta-se à vontade para contatá-los aqui. Eles estarão felizes em ajudar e estão comprometidos em manter o aplicativo em constante aprimoramento. Agradecemos por escolher nosso aplicativo e esperamos que você aproveite a experiência proporcionada por nossa equipe de desenvolvimento dedicada.</p>
+                            </div>
+                        </div>
+
+<!-- Modal de Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Adicione aqui o formulário de login -->
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Endereço de e-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submitLoginForm()">Entrar</button>
+                    <!-- Adicione o botão para abrir o modal de registro -->
+                    <button type="button" class="btn btn-link" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalRegistro">
+                        Registrar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de Registro -->
+<div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="modalRegistroLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalRegistroLabel">Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Adicione aqui o formulário de registro -->
+                <form id="registroForm">
+                    <!-- Adicione campos adicionais se necessário -->
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                    </div>
+                    <!-- Adicione outros campos conforme necessário -->
+                    <div class="mb-3">
+                        <label for="emailRegistro" class="form-label">Endereço de e-mail</label>
+                        <input type="email" class="form-control" id="emailRegistro" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senhaRegistro" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senhaRegistro" name="password" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submitRegistroForm()">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function submitLoginForm() {
+        const form = document.getElementById('loginForm');
+        const formData = new FormData(form);
+
+        fetch('http://localhost:3000/users', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Basic ' + btoa(formData.get('email') + ':' + formData.get('password'))
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            // Simulando a resposta do servidor
+            if (data.length > 0) {
+                // Login bem-sucedido
+                $('#modalLogin').modal('hide');
+                alert('Login bem-sucedido! Redirecionando para a página inicial...');
+                // Redireciona para home.html após 2 segundos
+                setTimeout(() => {
+                    window.location.href = 'home.html';
+                }, 2000);
+            } else {
+                // Login falhou
+                alert('Usuário ou senha incorretos.');
+            }
+        })
+        .catch(error => console.error('Erro:', error));
+    }
+</script>
+
+<script>
+    function submitRegistroForm() {
+        const form = document.getElementById('registroForm');
+        const formData = new FormData(form);
+
+        fetch('http://localhost:3000/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(Object.fromEntries(formData)),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            // Simulando a resposta do servidor
+            alert('Registro bem-sucedido! Você pode fazer login agora.');
+            $('#modalRegistro').modal('hide');
+        })
+        .catch(error => console.error('Erro:', error));
+    }
+</script>
+
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bt1" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bt2" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bt3" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="bt4" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="bt5" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption d-flex flex-column py-3 d-md-block py-md-5">
+                                    <h6>Júlio Cézar</h6>
+                                    <p>Back-End</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption d-flex flex-column py-3 d-md-block py-md-5">
+                                    <h6>Georgene Estevam</h6>
+                                    <p>Front-End</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption d-flex flex-column py-3 d-md-block py-md-5">
+                                    <h6>Elliel Alves</h6>
+                                    <p>Front-End</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption d-flex flex-column py-3 d-md-block py-md-5">
+                                    <h6>João Victor</h6>
+                                    <p>Front End</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-4">
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Seu nome"></textarea>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-primary">Enviar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </main>
+
+        <footer class="bg-goy">
+            <div class="container">
+                <div class="row  py-4 jus d-flex justify-content-center">
+                    <div class="col-md-5 text-white ">
+                        <h5>Medivital</h5>
+                        <p>O Medivital é uma revolução na assistência médica, trazendo uma abordagem inovadora para conectar médicos e pacientes de forma eficaz e eficiente. Este aplicativo médico, de fácil utilização e amigável, serve como um elo vital entre profissionais de saúde dedicados e indivíduos que buscam atendimento de qualidade. </p>
+                        <p>Nossa missão é empoderar médicos e pacientes, tornando o cuidado com a saúde acessível, eficiente e personalizado. Queremos proporcionar uma experiência de saúde contínua, onde o bem-estar do paciente é a prioridade absoluta. Ao fazer isso, estamos construindo um mundo mais saudável e feliz para todos.</p>
+                    </div>
+                    <div class="col-md-4 text-white ">
+                        <h5>Recife</h5>
+                        <p>709 Rua General Jacinto Pinto <br> Recife <br> PE 10028</p>
+                        <p>1-888-299-2000 <br> medivital@prontonmail.com</p>
+                    </div>
+                    <div class="col-md-3 text-white">
+                        <h5>Jaboatão</h5>
+                        <p>4851 Rua Doutora Paula Tejano <br> Jaboatão <br> PE 36109</p>
+                        <p>1-888-299-2000 <br> medivital@prontonmai.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function redirecionarParaHome() {
+                // Use window.location para redirecionar o usuário para home.html
+                window.location.href = 'home.html';
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

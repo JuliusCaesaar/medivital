@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&    display=swap" rel="stylesheet">
+    <title>Relatório de Medicamentos</title>
+    <style>
+        table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .relatorio-medicamentos {
+            padding: 10px;
+            text-align: center;
+            background-color: #135252;
+            margin-bottom: 100px;
+            margin-top: 3px;
+        }
+
+        .relatorio-medicamentos h1 {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .botao {
+            margin: 0 auto;
+            display: inline-block;
+            padding: 40px;
+            width: 100%;
+        }
+
+        .botao-voltar {
+            margin: 0 auto;
+            max-width: 300px;
+            cursor: pointer;
+            background-color: #1c9494;
+            padding: 20px 30px;
+            box-shadow: #135252 4px 4px 0px;
+            transition: transform 200ms, box-shadow 200ms;
+            color: #fff; 
+        }
+
+        .botao-voltar:active {
+            transform: translateY(4px) translateX(4px);
+            box-shadow: #135252 0px 0px 0px;
+        }       
+
+        .botao-voltar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .botao-voltar:hover {
+            background-color: #4d9999;
+            transition: 0.6s;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="./assets/img/Logo.jpg" alt="">
+        </div>
+
+        <nav class="desktop">
+            <ul>
+                <li><a href="./paginainicial.html">Boas vindas</a></li>
+                <li><a href="./home.html">Página Inicial</a></li>
+                <li><a href="./mercadorias.html">Estoque</a></li>
+                <li><a href="./funcionarios.html">Médicos</a></li>
+                <li><a href="./relatorio.html">Relatórios</a></li>
+                <li><a href="">Vendas por item</a></li>
+            </ul>
+
+            <div class="clear"></div>
+        </nav><!--.desktop-->
+
+        <button onclick="animarMenu()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+        <nav class="mobile" id="menu-mobile">
+            <ul>
+                <li><a href="./paginainicial.html">Boas vindas</a></li>
+                <li><a href="./home.html">Página Inicial</a></li>
+                <li><a href="./mercadorias.html">Estoque</a></li>
+                <li><a href="./funcionarios.html">Médicos</a></li>
+                <li><a href="./relatorio.html">Relatórios</a></li>
+                <li><a href="">Vendas por item</a></li>
+            </ul>
+
+            <div class="clear"></div>
+        </nav><!--.mobile-->
+    </header>    
+
+    <div class="relatorio-medicamentos"><h1>Relatório de Medicamentos</h1></div>
+    
+    <div class="container" style="max-width: 1000px;">
+        <table>
+            <tr>
+                <th>Medicamento</th>
+                <th>Preço Unitário</th>
+                <th>Quantidade Comprada</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Paracetamol</td>
+                <td>R$ 5.00</td>
+                <td>100</td>
+                <td>R$ 500.00</td>
+            </tr>
+            <tr>
+                <td>Aspirina</td>
+                <td>R$ 3.50</td>
+                <td>50</td>
+                <td>R$ 175.00</td>
+            </tr>
+            <tr>
+                <td>Amoxicilina</td>
+                <td>R$ 10.00</td>
+                <td>75</td>
+                <td>R$ 750.00</td>
+            </tr>
+            <tr>
+                <td>Ibuprofeno</td>
+                <td>R$ 6.00</td>
+                <td>200</td>
+                <td>R$ 1200.00</td>
+            </tr>
+            <tr>
+                <td>Atorvastatina</td>
+                <td>R$ 8.50</td>
+                <td>40</td>
+                <td>R$ 340.00</td>
+            </tr>
+            <tr>
+                <td>Omeprazol</td>
+                <td>R$ 7.25</td>
+                <td>60</td>
+                <td>R$ 435.00</td>
+            </tr>
+            <tr>
+                <td>Ciprofloxacina</td>
+                <td>R$ 9.75</td>
+                <td>30</td>
+                <td>R$ 292.50</td>
+            </tr>
+            <tr>
+                <td>Metformina</td>
+                <td>R$ 6.75</td>
+                <td>90</td>
+                <td>R$ 607.50</td>
+            </tr>
+            <tr>
+                <td>Losartana</td>
+                <td>R$ 11.20</td>
+                <td>70</td>
+                <td>R$ 784.00</td>
+            </tr>
+            <tr>
+                <td>Fluoxetina</td>
+                <td>R$ 4.80</td>
+                <td>120</td>
+                <td>R$ 576.00</td>
+            </tr>
+            <tr>
+                <td>Morfina</td>
+                <td>R$ 15.75</td>
+                <td>25</td>
+                <td>R$ 393.75</td>
+            </tr>
+            <tr>
+                <td>Prednisona</td>
+                <td>R$ 6.90</td>
+                <td>85</td>
+                <td>R$ 586.50</td>
+            </tr>
+            <tr>
+                <td>Diazepam</td>
+                <td>R$ 7.50</td>
+                <td>60</td>
+                <td>R$ 450.00</td>
+            </tr>
+            <tr>
+                <td>Cefalexina</td>
+                <td>R$ 8.25</td>
+                <td>40</td>
+                <td>R$ 330.00</td>
+            </tr>
+            <tr>
+                <td>Warfarina</td>
+                <td>R$ 9.10</td>
+                <td>55</td>
+                <td>R$ 500.50</td>
+            </tr>
+            <tr>
+                <td>Ranitidina</td>
+                <td>R$ 5.40</td>
+                <td>70</td>
+                <td>R$ 378.00</td>
+            </tr>
+            <tr>
+                <td>Salbutamol</td>
+                <td>R$ 4.00</td>
+                <td>150</td>
+                <td>R$ 600.00</td>
+            </tr>
+            <tr>
+                <td>Insulina</td>
+                <td>R$ 12.00</td>
+                <td>30</td>
+                <td>R$ 360.00</td>
+            </tr>
+            <tr>
+                <td>Metadona</td>
+                <td>R$ 10.30</td>
+                <td>20</td>
+                <td>R$ 206.00</td>
+            </tr>
+            <!-- Adicione mais medicamentos, se necessário -->
+        </table>
+
+        <div class="botao">
+            <div class="botao-voltar">
+                <a href="home.html">Voltar para a Página Inicial</a>
+            </div><!--.botao-voltar-->
+        </div><!--.botao-->
+    </div>
+
+    
+
+    <script src="./animar.js"></script>
+</body>
+</html>
