@@ -1,0 +1,755 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #1c9494;
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    padding: 10px;
+}
+
+nav.desktop ul {
+    float: right;
+    padding: 0 2%;
+}
+
+nav.desktop ul li {
+    float: left;
+    margin-top: 40px;
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+nav.desktop ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 19px;
+}
+
+/*nav.mobile {
+    display: none;
+}*/
+/*======================Estilização do menu mobile==================*/
+button#btn-menu {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 7px;
+    background: none;
+    border: 2px solid #fff;
+    display: none;
+}
+
+nav.mobile {
+    background-color: #f0f8ff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.mobile ul {
+    width: 100%;
+    text-align: center;
+}
+
+.mobile ul li {
+    border-bottom: 2px solid #1c9494;
+    padding: 20px;
+}
+
+.mobile ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    display: block;
+}
+
+.mobile ul li:hover {
+    background-color: #1c94948f;
+}
+/*======================Fim da estilização do menu mobile==================*/
+
+section.wrapper-2 {
+    padding: 20px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mercadoria {
+    float: left;
+    width: 48%;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #505050;
+    margin: 5px 1%;
+}
+
+.mercadoria img {
+    /*background-image: url(../img/icons8-box-300.png);
+    background-position: center;
+    height: 100%;
+    padding: 30%;
+    background-repeat: no-repeat;*/
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    max-width: 250px;
+}
+
+.mercadoria p , .medicos p {
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 25px;
+}
+
+.medicos {
+    float: right;
+    width: 48%;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #505050;
+    margin: 5px 1%;
+    max-height: 344px;
+}
+
+.medicos img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.medicos p {
+    position: relative;
+    top: -15px;
+}
+
+section.wrapper-5 .wrapper-4 {
+    float: left;
+    width: 50%;
+}
+
+.adicionar-mercadoria, .remover-mercadoria, .cadastrar-funcionario, .despesas-funcionario {
+    width: 48%;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    float: left;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #505050;
+    margin: 5px 1%;
+}
+
+.adicionar-mercadoria img, .remover-mercadoria img, .cadastrar-funcionario img, .despesas-funcionario img {
+    padding: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+.despesas {
+    float: right;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    width: 48%;
+    margin: 5px 1%;
+    max-height: 625px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #505050;
+}
+
+.despesas img {
+    width: 100%;
+    padding: 100px;
+}
+
+.despesas a {
+    text-decoration: none;
+}
+
+.despesas p {
+    color: #fff;
+    font-size: 30px;
+    top: -70px;
+    position: relative;
+}
+
+section .wrapper-5 .wrapper-4 {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.configuracoes, .chat, .duvidas, .atencao {
+    border: 10px solid #fff;
+    float: left;
+    background-color: #1c9494;
+    width: 48%;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #505050;
+    margin: 5px 1%;
+}
+
+.configuracoes img, .chat img, .duvidas img, .atencao img {
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+}
+
+.relatorios {
+    float: right;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    width: 48%;
+    margin: 5px 1%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #505050;
+    max-height: 625px;
+}
+
+.relatorios img {
+    display: inline-block;
+    width: 100%;
+    /*max-width: 585px;*/
+    padding: 80px;
+    margin-top: 60px;
+}
+
+.relatorios a {
+    color: #fff;
+    font-size: 30px;
+    top: -100px;
+    position: relative;
+    text-decoration: none;
+}
+
+/*===================Estilização da pagina mercadorias==================*/
+section.campo-produtos {
+    border-bottom: 3px solid #ccc;
+    padding: 40px;
+}
+
+.imagem-produto {
+    width: 20%;
+    display: inline-block;
+}
+
+.imagem-produto img {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #135252;
+}
+
+.descricao-produto {
+    width: 45%;
+    display: inline-block;
+}
+
+.descricao-produto p {
+    font-size: 26pt;
+    color: #135252;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.descricao-produto span.cod-barra {
+    font-size: 25px;
+    color: #135252;
+}
+
+.descricao-produto span {
+    font-size: 25px;
+    margin: 0 1%;
+}
+
+.quantidade {
+    width: 15%;
+    display: inline-block;
+}
+
+.quantidade p {
+    font-size: 18px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #135252;
+    border-radius: 30px;
+}
+
+/*===================Estilização da pagina relatorios==================*/
+section.relatorio {
+    background-color: #135252;
+    padding: 10px;
+}
+
+section.relatorio h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    color: #fff;
+}
+
+div.desc-relatorios {
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.desc-relatorios label {
+    font-size: 18px;
+    margin: 0 2%;
+}
+
+.desc-relatorios input[type=checkbox] {
+    margin: 0 2%;
+    float: right;
+}
+
+/*===================Aplicação do design responsivo==================*/
+@media screen and (max-width:1024px) {
+    .mercadoria {
+        max-height: 340px;
+    }
+
+    .medicos {
+        height: 340px;
+    }
+
+    .despesas {
+        max-height: 503px;
+    }
+
+    .despesas img {
+        width: 100%;
+        padding: 70px;
+    }
+
+    .relatorios {
+        max-height: 503px;
+    }
+
+    .relatorios img {
+        padding: 50px;
+        margin-top: 100px;
+    }
+
+    .relatorios p {
+        top: -30px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .mercadoria {
+        max-height: 290px;
+        width: 45%;
+    }
+
+    .mercadoria img {
+        max-width: 200px;
+    }
+
+    .mercadoria p {
+        top: -10px;
+        position: relative;
+    }
+
+    .despesas {
+        width: 45%;
+        max-height: 360px;
+    }
+
+    .medicos {
+        width: 45%;
+        height: 290px;
+    }
+
+    .medicos img {
+        width: 230px;
+    }
+
+    .adicionar-mercadoria, .remover-mercadoria, .cadastrar-funcionario, .despesas-funcionario {
+        width: 45%;
+    }
+
+    .configuracoes, .chat, .duvidas, .atencao {
+        width: 45%;
+    }
+
+    .relatorios {
+        max-height: 360px;
+        width: 45%;
+    }
+
+    .relatorios p {
+        top: -20px;
+        position: relative;
+    }
+
+    .descricao-produto p {
+        font-size: 20pt;
+    }
+
+    .descricao-produto span.cod-barra {
+        font-size: 20px;
+    }
+    
+    .descricao-produto span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    nav.desktop {
+        display: none;
+    }
+
+    button#btn-menu {
+        display: block;
+    }
+
+    .mobile.abrir {
+        visibility: visible;
+        height: calc(100vh - 100px);
+    } 
+
+    .linha {
+        position: relative;
+        height: 3px;
+        background-color: #fff;
+        width: 25px;
+        display: block;
+        margin: 5px auto;
+        transform-origin: center;
+        transition: .2s;
+    }
+
+    .medicos {
+        height: 290px;
+    }
+
+    .mercadoria p, .medicos p {
+        font-size: 20px;
+    }
+
+    .despesas {
+        height: 385px;
+    }
+
+    .despesas img {
+        max-width: 323px;
+    }
+
+    .descricao-produto p {
+        font-size: 27px;
+    }
+
+    .descricao-produto span.cod-barra, .descricao-produto span  {
+        font-size: 20px;
+    }
+
+    .relatorios {
+        height: 385px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mercadoria, .medicos {
+        border: 5px solid #fff;
+    }
+
+    .medicos {
+        height: 283px;
+    }
+
+    .adicionar-mercadoria, .remover-mercadoria, .cadastrar-funcionario, .despesas-funcionario {
+        border: 5px solid #fff;
+    }
+    .wrapper-1 .despesas {
+        border: 5px solid #fff;
+    }
+
+    .adicionar-mercadoria img, .remover-mercadoria img, .cadastrar-funcionario img, .despesas-funcionario img {
+        padding: 20px;
+    }
+
+    .despesas, .relatorios {
+        height: 280px;
+    }
+
+    .despesas img {
+        padding: 35px;
+        max-width: 253px;
+    }
+
+    .despesas p {
+        font-size: 20px;
+        top: -30px;
+    }
+
+    .configuracoes, .chat, .duvidas, .atencao, .relatorios {
+        border: 5px solid #fff;
+    }
+
+    .configuracoes img, .chat img, .duvidas img, .atencao img {
+        padding: 30px;
+    }
+
+    .relatorios img {
+        width: 100%;
+        display: inline;
+        max-width: 253px;
+        padding: 50px;
+    }
+
+    .relatorios p {
+        font-size: 20px;
+        top: -20px;
+    }
+
+    .quantidade p {
+        top: -55px;
+    }
+
+    .imagem-produto {
+        width: 30%;
+    }
+
+    .descricao-produto {
+        width: 40%;
+    }
+
+    .descricao-produto span.cod-barra {
+        font-size: 18px;
+    }
+    
+    .descricao-produto span {
+        font-size: 18px;
+    }
+
+    .quantidade {
+        width: 10%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .descricao-produto p {
+        font-size: 22px;
+    }
+
+    .descricao-produto span.cod-barra, .descricao-produto span  {
+        font-size: 18px;
+    }
+
+    .despesas, .relatorios {
+       height: 235px; 
+    }
+
+    .imagem-produto {
+        width: 100%;
+    }
+
+    .descricao-produto {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+        
+    }
+
+    .descricao-produto p {
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .quantidade {
+        width: 100%;
+    }
+
+    .quantidade p {
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .mercadoria {
+        height: 185px;
+    }
+
+    .mercadoria img {
+        width: 100%;
+        max-width: 90px;
+    }
+
+    .mercadoria p {
+        top: 30px;
+    }
+
+    .medicos {
+        height: 255px;
+    }
+
+    .medicos img {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .medicos p {
+        top: 5px;
+    }
+
+    .configuracoes img, .chat img, .duvidas img, .atencao img {
+        padding: 20px;
+    }
+
+    div.despesas, div.relatorios {
+        height: 190px;
+    }
+
+    div.relatorios p {
+        top: -40px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    div.mercadoria, div.medicos {
+        padding: 0px;
+    }
+
+    .mercadoria p, .medicos p {
+        font-size: 15px;
+        position: relative;
+        top: 15px;
+    }
+
+    div.mercadoria img, div.medicos img {
+        padding: 0px;
+        position: relative;
+        top: 15px;
+    }
+
+    div.mercadoria p, div.medicos p {
+        padding: 20px;
+    }
+
+    .medicos {
+        height: 185px;
+    }
+
+    .medicos p {
+        padding: 10px;
+        top: 15px;
+    }
+
+    div.despesas, div.relatorios {
+        height: 180px;
+    }
+
+    .despesas p {
+        font-size: 15px;
+    }
+
+    div.relatorios p {
+        font-size: 15px;
+    }
+
+    div.relatorios img {
+        padding: 30px;
+        position: relative;
+        top: -10px;
+    }
+
+    div.relatorios p {
+        top: -20px;
+    }
+
+    .descricao-produto p {
+        font-size: 18px;
+    }
+
+    .descricao-produto span.cod-barra, .descricao-produto span  {
+        font-size: 14px;
+    }
+
+    .quantidade p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .adicionar-mercadoria img, .remover-mercadoria img, .cadastrar-funcionario img, .despesas-funcionario img {
+        padding: 10px;
+    }
+
+    .medicos {
+        height: 185px;
+    }
+
+    div.despesas, div.relatorios {
+        height: 145px;
+    }
+
+    .configuracoes img, .chat img, .duvidas img, .atencao img {
+        padding: 10px;
+    }
+
+    div.relatorios img {
+        padding: 25px;
+        position: relative;
+    }   
+}
+
+

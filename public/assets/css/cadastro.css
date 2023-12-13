@@ -1,0 +1,143 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.cadastro-pacientes {
+    padding: 10px;
+    background-color: #135252;
+    margin-top: 3px;
+}
+
+.cadastro-pacientes h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.botao-cadastro {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.botao-pacientes {
+    margin: 50px;
+    padding: 15px 20px;
+    max-width: 1000px;
+    min-width: 200px;
+    background-color: #1c9494;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: #135252 4px 4px 0px;
+    transition: transform 200ms, box-shadow 200ms;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botao-pacientes:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #135252 0px 0px 0px;
+}
+
+form {
+    padding: 80px 2%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.campo-de-dados {
+    padding: 20px;
+}
+
+.campo-de-dados p {
+    display: inline-block;
+    margin: 20px 10px;
+    width: 15%;
+    font-size: 20px;
+}
+
+.campo-de-dados input {
+    padding: 10px;
+    line-height: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    min-width: 100px;
+    max-width: 450px;
+    width: 70%;
+    font-size: 16px;
+    box-shadow: 1px 1px 5px #505050;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.campo-de-dados input:focus, .campo-de-dados select:focus {
+    background-color: #60a7a7;
+    transition: 0.6s;
+}
+
+.campo-de-dados select {
+    padding: 10px;
+    line-height: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    min-width: 50px;
+    max-width: 150px;
+    width: 70%;
+    font-size: 16px;
+    box-shadow: 1px 1px 5px #505050;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.campo-de-dados [type=number] {
+    padding: 10px;
+    line-height: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    min-width: 50px;
+    max-width: 150px;
+    width: 70%;
+}
+
+.btn-cad-pacientes {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.btn-cad-pacientes [type=submit] {
+    cursor: pointer;
+    background-color: #1c9494;
+    padding: 20px 30px;
+    box-shadow: #135252 4px 4px 0px;
+    transition: transform 200ms, box-shadow 200ms;
+    color: #fff; 
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.btn-cad-pacientes [type=submit]:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #135252 0px 0px 0px;
+}       
+
+.btn-cad-pacientes [type=submit]:hover {
+    background-color: #4d9999;
+    transition: 0.6s;
+}

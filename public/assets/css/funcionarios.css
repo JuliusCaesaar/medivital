@@ -1,0 +1,599 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #1c9494;
+}
+
+nav.desktop ul {
+    float: right;
+    padding: 0 2%;
+}
+
+nav.desktop ul li {
+    float: left;
+    margin-top: 40px;
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+nav.desktop ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 19px;
+}
+
+/*nav.mobile {
+    display: none;
+}*/
+/*======================Estilização do menu mobile==================*/
+button#btn-menu {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 7px;
+    background: none;
+    border: 2px solid #fff;
+    display: none;
+}
+
+nav.mobile {
+    background-color: #f0f8ff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.mobile ul {
+    width: 100%;
+    text-align: center;
+}
+
+.mobile ul li {
+    border-bottom: 2px solid #1c9494;
+    padding: 20px;
+}
+
+.mobile ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    display: block;
+}
+
+.mobile ul li:hover {
+    background-color: #1c94948f;
+}
+/*======================Fim da estilização do menu mobile==================*/
+
+section.wrapper-2 {
+    padding: 20px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mercadoria {
+    float: left;
+    width: 50%;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    cursor: pointer;
+}
+
+.mercadoria img {
+    /*background-image: url(../img/icons8-box-300.png);
+    background-position: center;
+    height: 100%;
+    padding: 30%;
+    background-repeat: no-repeat;*/
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+
+.mercadoria p , .documentos p {
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 25px;
+}
+
+.documentos {
+    float: right;
+    width: 50%;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    cursor: pointer;
+}
+
+.documentos img {
+    /*background-image: url(../img/documentos.png);
+    background-position: center;
+    width: 100%;
+    padding: 30%;
+    background-repeat: no-repeat;*/
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section.wrapper-5 .wrapper-4 {
+    float: left;
+    width: 50%;
+}
+
+.adicionar-mercadoria, .remover-mercadoria, .cadastrar-funcionario, .despesas-funcionario {
+    width: 50%;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    float: left;
+    cursor: pointer;
+}
+
+.adicionar-mercadoria img, .remover-mercadoria img, .cadastrar-funcionario img, .despesas-funcionario img {
+    padding: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+.despesas {
+    float: right;
+    background-color: #1c9494;
+    border: 10px solid #fff;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.despesas img {
+    width: 100%;
+    max-width: 582px;
+    padding: 70px;
+    
+}
+
+.despesas p {
+    color: #fff;
+    font-size: 30px;
+    top: -50px;
+    position: relative;
+}
+
+section .wrapper-5 .wrapper-4 {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.configuracoes, .chat, .duvidas, .atencao {
+    border: 10px solid #fff;
+    float: left;
+    background-color: #1c9494;
+    width: 50%;
+    cursor: pointer;
+}
+
+.configuracoes img, .chat img, .duvidas img, .atencao img {
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+}
+
+.wrapper-1 .relatorios {
+    float: right;
+    width: 50%;
+}
+
+.relatorios {
+    border: 10px solid #fff;
+    float: right;
+    background-color: #1c9494;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.relatorios img {
+    display: block;
+    width: 100%;
+    max-width: 585px;
+    padding: 130px;
+}
+
+.relatorios a {
+    color: #fff;
+    font-size: 30px;
+    top: -50px;
+    position: relative;
+    text-decoration: none;
+}
+
+/*===================Estilização da pagina mercadorias==================*/
+section.campo-produtos {
+    border-bottom: 3px solid #ccc;
+    padding: 40px;
+}
+
+.imagem-produto {
+    width: 15%;
+    display: inline-block;
+}
+
+.imagem-produto img {
+    border-radius: 3px;
+    border: 1px solid #000;
+    
+}
+
+.descricao-produto {
+    width: 65%;
+    display: inline-block;
+}
+
+.descricao-produto p {
+    font-size: 26pt;
+    color: #135252;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.descricao-produto span.cod-barra {
+    font-size: 25px;
+    color: #135252;
+    margin-left: 15px;
+}
+
+.descricao-produto span {
+    font-size: 25px;
+    padding: 20px 5px;
+}
+
+.quantidade {
+    width: 15%;
+    display: inline-block;
+}
+
+.quantidade p {
+    text-align: center;
+    position: relative;
+    top: -120px;
+}
+
+/*===================Estilização da pagina relatorios==================*/
+section.relatorio {
+    background-color: #135252;
+    padding: 10px;
+}
+
+section.relatorio h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    color: #fff;
+}
+
+div.desc-relatorios {
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.desc-relatorios label {
+    font-size: 18px;
+    margin: 0 2%;
+}
+
+.desc-relatorios input[type=checkbox] {
+    margin: 0 2%;
+    float: right;
+}
+
+/*===================Estilização da pagina funcionarios==================*/
+
+div.listar-medicos {
+    padding: 10px;
+    background-color: #135252;
+    margin-top: 3px;
+    margin-bottom: 50px;
+}
+
+.listar-medicos h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.medicos-disponiveis {
+    width: 100%;
+}
+
+.medicos {
+    padding: 20px 2%;
+    border-bottom: 2px solid #ccc;
+}
+
+.medicos p {
+    margin: 8px 2%;
+    
+}
+
+.medicos img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.medicos label {
+    float: right;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/*===================Aplicação do design responsivo==================*/
+@media screen and (max-width:1024px) {
+
+    .despesas img {
+        width: 92%;
+        padding: 70px;
+    }
+
+    .relatorios img {
+        width: 93%;
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    /*.adicionar-mercadoria, .remover-mercadoria, .cadastrar-funcionario, .despesas-funcionario, .despesas {
+        border: 5px solid #fff;
+    }*/
+
+    .despesas img {
+        max-width: 339px;
+    }
+
+    .relatorios img {
+        padding: 90px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    nav.desktop {
+        display: none;
+    }
+
+    button#btn-menu {
+        display: block;
+    }
+
+    .mobile.abrir {
+        visibility: visible;
+        height: calc(100vh - 100px);
+    } 
+
+    .linha {
+        position: relative;
+        height: 3px;
+        background-color: #fff;
+        width: 25px;
+        display: block;
+        margin: 5px auto;
+        transform-origin: center;
+        transition: .2s;
+    }
+
+    .mercadoria p, .documentos p {
+        font-size: 20px;
+    }
+
+    .despesas img {
+        max-width: 323px;
+    }
+
+    .descricao-produto p {
+        font-size: 27px;
+    }
+
+    .descricao-produto span.cod-barra, .descricao-produto span  {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mercadoria, .documentos {
+        border: 5px solid #fff;
+    }
+
+    .adicionar-mercadoria, .remover-mercadoria, .cadastrar-funcionario, .despesas-funcionario {
+        border: 5px solid #fff;
+    }
+    .wrapper-1 .despesas {
+        border: 5px solid #fff;
+    }
+
+    .adicionar-mercadoria img, .remover-mercadoria img, .cadastrar-funcionario img, .despesas-funcionario img {
+        padding: 20px;
+    }
+
+    .despesas img {
+        padding: 35px;
+        max-width: 253px;
+    }
+
+    .despesas p {
+        font-size: 20px;
+        top: -30px;
+    }
+
+    .configuracoes, .chat, .duvidas, .atencao, .relatorios {
+        border: 5px solid #fff;
+    }
+
+    .configuracoes img, .chat img, .duvidas img, .atencao img {
+        padding: 30px;
+    }
+
+    .relatorios img {
+        width: 100%;
+        display: inline;
+        max-width: 253px;
+        padding: 50px;
+    }
+
+    .relatorios p {
+        font-size: 20px;
+        top: -20px;
+    }
+
+    .quantidade p {
+        top: -55px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .descricao-produto p {
+        font-size: 22px;
+    }
+
+    .descricao-produto span.cod-barra, .descricao-produto span  {
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    .configuracoes img, .chat img, .duvidas img, .atencao img {
+        padding: 20px;
+    }
+
+    div.despesas {
+        height: 201px;
+    }
+
+    div.relatorios {
+        height: 201px;
+    }
+
+    div.relatorios p {
+        top: -40px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    div.mercadoria, div.documentos {
+        padding: 0px;
+    }
+
+    .mercadoria p, .documentos p {
+        font-size: 15px;
+        position: relative;
+        top: 6px;
+    }
+
+    div.mercadoria img, div.documentos img {
+        padding: 0px;
+        position: relative;
+        top: 15px;
+    }
+
+    div.mercadoria p, div.documentos p {
+        padding: 20px;
+    }
+
+    div.despesas {
+        height: 188px;
+    }
+
+    .despesas p {
+        font-size: 15px;
+    }
+
+    div.relatorios {
+        height: 188px;
+    }
+
+    div.relatorios p {
+        font-size: 15px;
+    }
+
+    div.relatorios img {
+        padding: 40px;
+        position: relative;
+        top: -10px;
+    }
+
+    div.relatorios p {
+        top: -40px;
+    }
+
+    .descricao-produto p {
+        font-size: 18px;
+    }
+
+    .descricao-produto span.cod-barra, .descricao-produto span  {
+        font-size: 14px;
+    }
+
+    .quantidade p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .adicionar-mercadoria img, .remover-mercadoria img, .cadastrar-funcionario img, .despesas-funcionario img {
+        padding: 10px;
+    }
+
+    div.despesas, div.relatorios {
+        height: 151px;
+    }
+
+    .configuracoes img, .chat img, .duvidas img, .atencao img {
+        padding: 10px;
+    }
+    
+}
+
+
