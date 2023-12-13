@@ -1,0 +1,164 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Julio",
+      "sobrenome": "Figueredo",
+      "email": "juliounifg@ulife.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "email": "elielunifg@ulife.com",
+      "password": "123456"
+    },
+    {
+      "nome": "Georgene",
+      "sobrenome": "Estevam",
+      "email": "georgefg@ulife.com",
+      "password": "123456",
+      "id": 3
+    }
+  ],
+  "pacientes": [
+    {
+      "id": 1,
+      "nome": "Nome do Paciente",
+      "nascimento": "2000-01-01",
+      "cpf": "123.456.789-00",
+      "sexo": "Masculino",
+      "tipo_sanguineo": "A+",
+      "telefone": "(12) 3456-7890",
+      "celular": "(12) 98765-4321",
+      "email": "paciente@example.com",
+      "nome_mae": "Nome da Mãe",
+      "nome_pai": "Nome do Pai",
+      "endereco": "Rua do Paciente",
+      "numero": 123,
+      "bairro": "Bairro do Paciente",
+      "cep": "12345-678",
+      "leito": "Leito 1",
+      "leitoOcupado": true
+    },
+    {
+      "nome": "Georgene Estevam",
+      "nascimento": "20000-05-24",
+      "cpf": "10819621312",
+      "sexo": "Masculino",
+      "tipo_sanguineo": "A+",
+      "telefone": "12312312",
+      "celular": "12312312",
+      "email": "georgefg@ulife.com",
+      "nome_mae": "priscila",
+      "nome_pai": "mc kevinho",
+      "endereco": "rua blablabla",
+      "numero": "123",
+      "bairro": "bairro blablabla",
+      "cep": "1231231",
+      "leito": "Leito 3",
+      "id": "GCRl-NMoS"
+    }
+  ],
+  "leitos": [
+    {
+      "id": 1,
+      "numero": "Leito 1",
+      "ocupado": true
+    },
+    {
+      "id": 2,
+      "numero": "Leito 2",
+      "ocupado": false
+    },
+    {
+      "id": 3,
+      "numero": "Leito 3",
+      "ocupado": true
+    },
+    {
+      "id": 4,
+      "numero": "Leito 4",
+      "ocupado": true
+    },
+    {
+      "id": 5,
+      "numero": "Leito 5",
+      "ocupado": false
+    },
+    {
+      "id": 6,
+      "numero": "Leito 6",
+      "ocupado": true
+    },
+    {
+      "id": 7,
+      "numero": "Leito 7",
+      "ocupado": false
+    },
+    {
+      "id": 8,
+      "numero": "Leito 8",
+      "ocupado": true
+    },
+    {
+      "id": 9,
+      "numero": "Leito 9",
+      "ocupado": false
+    },
+    {
+      "id": 10,
+      "numero": "Leito 10",
+      "ocupado": true
+    },
+    {
+      "id": 11,
+      "numero": "Leito 11",
+      "ocupado": false
+    },
+    {
+      "id": 12,
+      "numero": "Leito 12",
+      "ocupado": true
+    },
+    {
+      "id": 13,
+      "numero": "Leito 13",
+      "ocupado": false
+    },
+    {
+      "id": 14,
+      "numero": "Leito 14",
+      "ocupado": true
+    },
+    {
+      "id": 15,
+      "numero": "Leito 15",
+      "ocupado": false
+    },
+    {
+      "id": 16,
+      "numero": "Leito 16",
+      "ocupado": true
+    },
+    {
+      "id": 17,
+      "numero": "Leito 17",
+      "ocupado": false
+    },
+    {
+      "id": 18,
+      "numero": "Leito 18",
+      "ocupado": true
+    },
+    {
+      "id": 19,
+      "numero": "Leito 19",
+      "ocupado": false
+    },
+    {
+      "id": 20,
+      "numero": "Leito 20",
+      "ocupado": true
+    }
+  ]
+}
